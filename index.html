@@ -1,6 +1,41 @@
-<div style="background-color:black">
-  <video id="events-video" muted playsinline style="width: 100%; max-width: 500px; margin-top: 20px;">
-      <source src="assets/mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>OG Jersey</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+      <style>
+        html, body {
+          margin: 0;
+          height: 100vh; /* Make html and body fill the viewport */
+        }
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: black;
+        }
+        section {
+          min-height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+        video {
+          width: 100%;
+          max-width: 400px;
+          margin-top: 20px;
+        }
+      </style>
+  </head>
+  <body>
+    <section>
+      <video id="events-video" muted autoplay loop>
+          <source src="assets/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+    </section>
+  </body>
+</html>
