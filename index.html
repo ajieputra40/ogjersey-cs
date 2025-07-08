@@ -24,7 +24,12 @@
           align-items: center;
           width: 100%;
         }
-        video {
+        .main-video {
+          width: 100%;
+          max-width: 400px;
+          margin-top: 20px;
+        }
+        .coming-soon-video {
           width: 100%;
           max-width: 800px;
           margin-top: 20px;
@@ -40,10 +45,14 @@
   </head>
   <body>
     <section class="coming-soon">
-      <div>
+      <!-- <div>
         <img src="assets/favicon.jpeg" width="200" alt="Villacoin Logo"/>
-      </div>
-      <video id="events-video" muted autoplay loop playsinline poster="assets/favicon.jpeg" preload="auto">
+      </div> -->
+      <video id="events-video" class="main-video" muted autoplay loop playsinline poster="assets/favicon.jpeg" preload="auto">
+          <source src="assets/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      <video id="events-video" class="coming-soon-video" muted autoplay loop playsinline poster="assets/favicon.jpeg" preload="auto">
           <source src="assets/coming-soon.mp4" type="video/mp4">
           Your browser does not support the video tag.
       </video>
